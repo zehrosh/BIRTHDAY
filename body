@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #E6E6FA; /* Lila Hintergrund */
+    font-family: 'Arial', sans-serif; /* Neue Schriftart */
+}
+
+.header_text {
+    font-family: 'Lobster', cursive; /* Neue Schriftart für den Header */
+    font-size: 50px;
+    font-weight: bold;
+    color: #7D3C98; /* Dunkles Lila */
+    text-align: center;
+    margin: 20px 0;
+}
+
+.gif_container img {
+    width: 300px; /* Größe des GIFs */
+    margin: 20px 0;
+}
+
+.subtext p {
+    font-family: 'Dancing Script', cursive; /* Neue Schriftart für den Untertext */
+    font-size: 25px;
+    font-weight: bold;
+    color: #8E44AD; /* Mittleres Lila */
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #C39BD3; /* Helles Lila */
+    color: white;
+    padding: 15px 32px;
+    font-family: 'Arial', sans-serif; /* Schriftart für die Buttons */
+    font-size: 16px;
+    margin: 4px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #D7BDE2; /* Sehr helles Lila */
+}
+
+#noButton {
+    position: absolute;
+    transition: 0.5s;
+}
+
+#yesButton {
+    position: relative;
+}
