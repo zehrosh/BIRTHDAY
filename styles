@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #E6E6FA; /* Lila Hintergrund */
+    font-family: 'Dancing Script', cursive;
+    overflow: hidden; /* Verhindert Scrollen */
+}
+
+.romantic-text {
+    text-align: center;
+    color: #4A235A; /* Sehr dunkles Lila */
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+}
+
+.romantic-text h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #7D3C98;
+    margin-bottom: 20px;
+}
+
+.romantic-text p {
+    font-size: 24px;
+    color: #8E44AD;
+    line-height: 1.5;
+}
+
+/* Animation für die Herzen */
+@keyframes floatUp {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+
+.heart {
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+    color: #FF69B4; /* Pink für die Herzen */
+    animation: floatUp 5s infinite ease-in;
+    opacity: 0.8;
+}
+
+/* Verschiedene Herzgrößen und Startpositionen */
+.heart:nth-child(1) { left: 20%; animation-duration: 4s; }
+.heart:nth-child(2) { left: 30%; animation-duration: 5s; }
+.heart:nth-child(3) { left: 50%; animation-duration: 4.5s; font-size: 25px; }
+.heart:nth-child(4) { left: 70%; animation-duration: 3.8s; font-size: 15px; }
+.heart:nth-child(5) { left: 80%; animation-duration: 4.7s; font-size: 18px; }
